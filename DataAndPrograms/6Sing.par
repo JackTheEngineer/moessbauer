@@ -1,0 +1,25 @@
+Parameters for NSing: N single Lorentzians
+theory          NSing
+maxiter              40
+parasig               2
+chi2sig               2
+fitparameter         19
+Baseline               37072   
+Total Area            0.39652  
+Pos 1                -8.325  
+Width 1               0.30993  
+Pos 2                -4.55212  
+Width 2               0.95787  
+Area 2                0.17377  
+Pos 3                -1.22488  
+Width 3               0.86179  
+Area 3                0.10146  
+Pos 4                 1.49332  
+Width 4               0.89491  
+Area 4                0.09812  
+Pos 5                 5.3 
+Width 5               0.92537  
+Area 5                0.16809  
+Pos 6                 9.76632  
+Width 6               1.00486  
+Area 6                0.22879  

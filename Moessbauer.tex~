@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=30mm, headsep=10mm, footskip=12mm}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{textcomp}
+\usepackage{ngerman}
+\usepackage{verbatim}
+\usepackage{slashed}
+\usepackage{bbm}
+\usepackage{tikz}
+\title{Laser und nichtlineare Optik}
+\author{Gruppe 26\\ Anh Tong \\ Tobias Theil \\ Kholodkov Jakov }
+\date{\today}
+
+% stands for the degree sign 
+\newcommand{\dee}{{$^{\circ}$}} 	
+\newcommand{\degr}{^{\circ}}
+\newcommand{\shf}{$SF_6$}
+% \newcommand{\abs}[1]{\ensuremath{\left\vert#1\right\vert}}
+
+
+\begin{document}
+	
+\maketitle
+\tableofcontents
+\bibliography{literatur}
+\bibliographystyle{unsrt}
+
+\newpage
+\input{kapitel/einleitung.tex}
+\input{kapitel/methoden.tex}
+\input{kapitel/experimentelles_vorgehen.tex}
+\input{kapitel/auswertung.tex}
+\input{kapitel/fehlerrechung.tex}
+\input{kapitel/fragen.tex}
+
+% Anhaege 
+\begin{appendix}
+\input{kapitel/anhang.tex}
+\end{appendix}
+ 
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+

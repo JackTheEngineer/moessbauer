@@ -1,0 +1,88 @@
+\section{Theorie}
+\subsection{Funktionsweise eines Lasers}
+Man benötigt zwei entscheidende Physikalische Aspekte, um einen Laser zu bauen.
+Im folgenden wird ein Zweiniveausystem für ein Elektron mit den Zuständen
+$\ket{1}$ und $\ket{2}$ genauer Untersucht. \\
+Der erste Aspekt ist die induzierte Photonenemission. Wenn es ein Elektron in einem
+angeregten Zustand $\ket{2}$ gibt, und es mit einem Photon interagiert, welches die
+Differenzenergie der Zustände $\ket{2} - \ket{1}$ trägt, dann regt sich das
+Elektron ab und emittiert dabei ein Photon welches deselbe Phase,
+Polarisation und Richtung hat, wie das auf das Elektron eingefallene Photon.
+Wenn es nun sehr viele Elektronen im Zustand $\ket{2}$ gibt, so sorgt der Effekt
+der induzierten Emission für Photonen mit identischen Eigenschaften. Nun benötigt man
+stets mehr Elektronen im Zustand $\ket{2}$ als im Zustand $\ket{1}$, damit es
+zur kontinuierlichen induzierten Photoemission kommen kann.
+\[
+  n_{\ket{2}} > n_{\ket{1}}
+\]
+Diese Bedingung heißt Besetzungsinversion. Das ist der Zweite enscheidene Aspekt.
+Mit einem reinen Zweiniveausystem lässt sich die Besetzungsinversion nicht
+erreichen, da der Wirkungsquerschnitt zum anregen der Elektronen derselbe ist,
+wie zum induzierten abregen. Man benötigt noch mindestens ein drittes Pumpniveau $\ket{3}$,
+auf welches man Elektronen mit Photonen der Energie $\ket{3} - \ket{1}$ befördert, 
+damit sich möglichst schnell auf das langlebigere Niveau $\ket{2}$ abregen und von
+dort durch induzierte Abregung Laserlicht erzeugen.\\
+Für einen voll funktionsfähigen Laser benötigt es noch zwei gekrümmte Resonatorspiegel, 
+mit reflektionskoeffizienten $R_1$ und $R_2$. Im Laser
+muss das Licht stets rückgekoppelt werden, sodass es eine stetige induzierte Anregung gibt.
+Für die stetige Rückkopplung müssen die Radien $r_1$ und
+$r_2$  die Stabilitätsbedingung erfüllen. Hierbei bezeichnet $L$ den Abstand zwischen den Spiegeln.
+\[
+   0 <  1 - \frac{L}{r_1} - \frac{L}{r_2} + \frac{L^2}{r_1r_2} < 1 
+\]
+In dem Resonanzmedium können Photonen absorbiert werden.
+Die Verluste pro Strecke werden mit $\delta$ bezeichnet. Die Laseraktivität ist abhängig von den
+Verlusten $\delta$ pro, davon wie groß die Bestzungsinversion $n_{\ket{2}} - n_{\ket{1}}$ ist,
+und wie groß der Wirkungsquerschnitt $\sigma$ für die induzierte Emission ist.
+Bei einem Durchlauf vom Licht zum ersten Spiegel, zurück zum zweiten Spiegel und wieder zum Anfangspunkt zurück
+berechnet man alle Verlust- und Vervielfältigungseffekte vom Licht durch multiplikation
+und erhält für die neue Lichtintensität
+\[
+I_1 = I_0R_1R_2\cdot \exp{2l(\sigma(n_{\ket{2}} - n_{\ket{1}}) - \delta)}
+\]
+Für eine Laseraktivität muss gelten $\sfrac{I_1}{I_0} > 1$, und somit
+\[
+   \frac{\delta}{\sigma} - \frac{ln\big(R_1R_0\big)}{2} < n_{\ket{2}} - n_{\ket{1}}
+\]
+
+\paragraph{Nd:YFL Laser}
+Der im Versuch Verwendete Laser hat ein Neodym-Ion als aktives Material.
+Das äußerste Elektron hat dabei vier Energieniveaus zur Verfügung stehen.
+Mit Pumplicht aus einer Halbleiterdiode werden die Elektronen im Pumpmaterial
+vom niedrigsten Zustand $\ket{1}$ in den Zustand $\ket{4}$ angeregt. Der Übergang des
+vom Zustand $\ket{4}$ in den langlebigen Zustand $\ket{3}$ erfolgt sehr
+schnell. Durch induzierte Lichtemission begeben sich die Elektronen in den kurzlebigen
+Zustand $\ket{2}$, von dem sie erneut schnell in den Zustand $\ket{1}$ übergehen.
+So ensteht eine grosse Besetzungsinversion, wiederum zu einer starken Lichintensität
+nach einem Durchlauf führt.
+
+\subsection{Erzeugung von Ultrakurz-Lichpulsen}
+In dem vorher beschriebenen Resonator aus Spiegeln mit der Länge $L$
+entstehen elektromagnetische stehende Longitudinalwellen mit den Wellenlängen
+\begin{equation}
+  2L = n\lambda_n
+  \label{equ:resonance}
+\end{equation}
+mit dem Kreisfrequenzabstand $\triangle \omega = \sfrac{\pi c}{L}$. So lässt sich die
+Wellenlängendifferenz von einer Wellenlänge $\lambda$ zur nächsten errechnen
+Im Resonator wird aber nur ein Teil aller Wellen welche die Bedingung \ref{equ:resonance}
+erfüllen, verstärkt. 
+Erzeugt man akustiche Schwingungen mit der Frequenz $\Omega$ in einem Quarzkristall, 
+und setzt diesen Quarzkristall in die Resonatorstrecke, so werden durch periodische Transmussion
+der Kreisfrequenz $\omega_n \pm \Omega$. Ist dabei $\Omega = \triangle \omega$ 
+bringt man durch Interferenzeffekte alle Longitudinalmoden in eine feste Phasenbeziehung
+und erzeugt damit starke Peaks des elektromagetischen Feldes, Ultrakurzpulse.
+Dabei hängt die Dauer und intensität von der Anzahl der gekoppelten Moden ab.
+Je breitbandiger der Laser ist, umso mehr Moden können miteinander gekoppelt werden,
+und umso kürzer ist der Peak.
+
+\subsection{Optisch nichtlineare Materialien}
+In der klassischen Optik ist die Polarisation eines Dielektrikums linear proportional zur
+elektrischen Feldstärke. 
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Laser"
+%%% End:

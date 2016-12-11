@@ -1,0 +1,23 @@
+Parameters for NSext: M sextets and K doublets
+theory          nsext.exe
+maxiter              25
+parasig               2
+chi2sig               2
+fitparameter          17
+Baseline              143352   
+Total Area            0.35294  
+Sextets               2.00000 F
+Doublets              0.00000 F
+Sex1: B               50
+      QS              0
+      IS              0.3  
+      W_out           0.28413  
+      3:2p:1p**2      1.06519  
+      W_in            0.25000 
+Sex2: B               46
+      QS              0
+      IS              0.6  
+      W_out           0.28413  
+      3:2p:1p**2      1.06519  
+      A_rel           0.66
+      W_in            0.25000

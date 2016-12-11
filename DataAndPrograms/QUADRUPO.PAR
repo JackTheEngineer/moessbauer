@@ -1,0 +1,10 @@
+Parameters for QUADRUPO: One quadrupole doublet
+vmax                  12.0
+theory           QUADRUPO
+fitparameter          5
+Baseline             1000000
+QuadSplit             1.000
+IsoShift              0.800
+LineWidth             0.250
+LineDepth             0.050
+

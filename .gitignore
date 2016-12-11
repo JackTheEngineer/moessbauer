@@ -1,0 +1,12 @@
+auto/
+**/**/auto/
+.projectile
+
+*.log
+*.toc
+*.bbl
+*.aux
+*.blg
+*.out
+*.pdf
+*.synctex.gz
