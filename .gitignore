@@ -10,3 +10,5 @@ auto/
 *.out
 *.pdf
 *.synctex.gz
+
+!DataAndPrograms/MosViewReport.pdf
